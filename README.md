@@ -16,3 +16,5 @@ ___Bold and Italic___
 
 
 [^1]: [Skaistai formatēšanai izmantota pamācība - Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+<!-- Comment -->
