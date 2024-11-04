@@ -24,9 +24,9 @@ if (new Date().getHours() >= 19) {
 */
 
 if (new Date().getHours() < 11) {
-  document.getElementById("demo").innerHTML = "Good Morning!";
+  document.getElementById("demo_if").innerHTML = "Good Morning!";
 } else if (new Date().getHours() >= 11 && new Date().getHours() < 19) {
-  document.getElementById("demo").innerHTML = "Good Day!";
+  document.getElementById("demo_if").innerHTML = "Good Day!";
 } else {
-  document.getElementById("demo").innerHTML = "Good Evening!";
+  document.getElementById("demo_if").innerHTML = "Good Evening!";
 }
