@@ -27,3 +27,8 @@ document.getElementById("demo").innerHTML =
   `<br>Skaitļa ${7} kvadrāts ir ${square_2(7)}`;
 
 console.log(`Faktoriāls no ${3} ir ${factorial(3)}`); // 3! = 1 * 2 * 3 = 2! * 3 = 1! * 2 * 3   NB! 0! = 1
+
+/*
+function skaitiit(N, Kaa){}
+
+*/
