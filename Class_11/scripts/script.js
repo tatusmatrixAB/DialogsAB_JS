@@ -1,5 +1,5 @@
 // https://www.javascripttutorial.net/javascript-bom/javascript-window/
-
+/*
 var counter = 1;
 var showCounter = () => console.log({ counter });
 
@@ -8,7 +8,9 @@ console.log(window.counter);
 
 showCounter();
 window.showCounter();
+*/
 
+/*
 const inner_width =
   window.innerWidth ||
   document.documentElement.clientWidth ||
@@ -32,10 +34,11 @@ console.log(
 console.log("Pārlūka loga iekšējās daļas augstums - " + inner_height);
 
 const outer_width = window.outerWidth;
-console.log("Pārlūka loga ārejās daļas platums - " + outer_width);
+console.log("Pārlūka loga ārējās daļas platums - " + outer_width);
 
 const outer_height = window.outerHeight;
 console.log("Pārlūka loga ārējās daļas augstums - " + outer_height);
+*/
 
 //let url = 'http://127.0.0.1:5500/Class_07/';
 //let jsWindow = window.open(url,'Class_07');
@@ -70,7 +73,7 @@ setTimeout(() => {
 */
 
 // https://www.javascripttutorial.net/javascript-bom/javascript-alert/
-//alert("Cienījamais lietotāj, tulīt mēs tevi infoemēsim par ...");
+//alert("Cienījamais lietotāj, tūlīt mēs tevi informēsim par ...");
 
 // https://www.javascripttutorial.net/javascript-bom/javascript-confirm/
 //let result = window.confirm("Jā vai nē?");
@@ -78,11 +81,19 @@ setTimeout(() => {
 //alert(message);
 
 // https://www.javascripttutorial.net/javascript-bom/javascript-prompt/
-let lang = prompt('What is your favorite programming language?');
+//let lang = prompt('What is your favorite programming language?');
+//let feedback = lang.toLowerCase() === 'javascript' ? `It's great!` : `It's ${lang}`;
+//alert(feedback);
 
-let feedback = lang.toLowerCase() === 'javascript' ? `It's great!` :
-    `It's ${lang}`;
+// https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/
+var timeoutID;
 
-alert(feedback);
+function showAlert() {
+    timeoutID = setTimeout(alert, 3000, 'setTimeout Demo!');
+    console.log("New timeoutID - "+timeoutID);
+}
 
-
+function cancelAlert() {
+    console.log("timeoutID to be cleared - "+timeoutID);
+    clearTimeout(timeoutID);
+}
