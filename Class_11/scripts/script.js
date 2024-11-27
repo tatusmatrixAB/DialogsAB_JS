@@ -49,7 +49,6 @@ console.log("Pārlūka loga ārējās daļas augstums - " + outer_height);
 //let url = 'file:///C:/Users/Tatjana/Downloads/DialogsAB/DialogsAB_JS_V/DialogsAB_JS/Class_10/index.html';
 //let jsWindow = window.open(url,'local');
 
-
 /*
 let jsWindow = window.open(
   //"https://rtu.lv",
@@ -89,11 +88,31 @@ setTimeout(() => {
 var timeoutID;
 
 function showAlert() {
-    timeoutID = setTimeout(alert, 3000, 'setTimeout Demo!');
-    console.log("New timeoutID - "+timeoutID);
+  timeoutID = setTimeout(alert, 3000, "setTimeout Demo!");
+  console.log("New timeoutID - " + timeoutID);
 }
 
 function cancelAlert() {
-    console.log("timeoutID to be cleared - "+timeoutID);
-    clearTimeout(timeoutID);
+  console.log("timeoutID to be cleared - " + timeoutID);
+  clearTimeout(timeoutID);
+}
+
+// https://www.javascripttutorial.net/javascript-bom/javascript-setinterval/
+let intervalID;
+
+function start() {
+  intervalID = setInterval(toggleColor, 1000);
+  console.log("New intervalID - " + intervalID);
+  document.getElementById("start").disabled = true;
+}
+
+function stop() {
+  clearInterval(intervalID);
+  console.log("intervalID to be cleared - " + intervalID);
+  document.getElementById("start").disabled = false;
+}
+
+function toggleColor() {
+  let e = document.getElementById("flashtext");
+  e.style.color = e.style.color == "red" ? "blue" : "red";
 }
