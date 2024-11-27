@@ -26,3 +26,6 @@ console.log("Pārlūka loga ārejās daļas platums - "+outer_width);
 
 const outer_height = window.outerHeight;
 console.log("Pārlūka loga ārējās daļas augstums - "+outer_height);
+
+let url = 'http://127.0.0.1:5500/Class_07/';
+let jsWindow = window.open(url,'Class_07');
