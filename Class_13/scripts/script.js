@@ -67,3 +67,9 @@ let getSiblings = function (e) {
 };
 
 let siblingss_ = getSiblings(items[0]);
+
+setTimeout(() => {
+    let div = document.createElement('div');
+    div.innerHTML = '<p>CreateElement example</p>';
+    document.body.appendChild(div);
+}, 3000);
