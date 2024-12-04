@@ -73,3 +73,7 @@ setTimeout(() => {
     div.innerHTML = '<p>CreateElement example</p>';
     document.body.appendChild(div);
 }, 3000);
+
+// https://www.javascripttutorial.net/javascript-dom/javascript-textcontent/
+let note = document.getElementById('note');
+console.log(note.textContent);
