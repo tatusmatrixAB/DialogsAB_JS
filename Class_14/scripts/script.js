@@ -11,17 +11,18 @@
 7. Cookie dzēšana (iztecējušā laika uzdošana)
 */
 
+/*
 var str = document.cookie;
 console.log("cookie vērtība: " + str);
-
 
 document.cookie = "username_1=admin_1; path=/";
 document.cookie = "username_2=admin_2";
 str = document.cookie;
 console.log("cookie vērtība: "+str);
+*/
 
-/*
-document.cookie = "username=admin_2";
+
+//document.cookie = "username=admin_2";
 str = document.cookie;
 console.log("cookie vērtība: "+str);
 
@@ -43,4 +44,3 @@ function display(cookie_name, cookie_value, cookie_expire_time_sec) {
   }
   console.log(document.cookie);
 }
-  */
